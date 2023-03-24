@@ -4,15 +4,17 @@
 
 @import "./base/typography";
 
-@import "./components/header";
-@import "./components/footer";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/loader";
+
+@import "./pages/index.scss";
+@import "./pages/restaurant.scss";
+
 @import "./components/button.scss";
 @import "./components/card.scss";
 @import "./components/cardgrid.scss";
 @import "./components/menu-button.scss";
-@import "./components/loader";
-
-@import "./pages/index.scss";
 
 :root {
   margin: auto;
