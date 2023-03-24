@@ -23,7 +23,7 @@
   font-size: 3.5em;
 }
 .Out-loader {
-  animation: Out-loader 0.45s cubic-bezier(0.6, -0.28, 0.735, 0.045) both;
+  animation: Out-loader 0.45s linear both;
   animation-delay: 3000ms;
 }
 /***********animation title***********/
