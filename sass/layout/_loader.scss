@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 1);
 }
 .loader-page {
   height: 250px;
@@ -81,124 +81,7 @@
   left: 120px;
   animation: anim-cuillere 1.5s linear infinite;
 }
-/***************Les fumées******************/
-.left-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 70px;
-}
-.little-left-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-}
-.little-left-smoke-upper {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-}
-.upper-left-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 50px;
-}
-.mid-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 80px;
-}
-.mid-upper-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 25px;
-}
-.right-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 65px;
-}
-.right-upper-smoke {
-  margin: 0;
-  padding: 0;
-  font-size: 45px;
-}
-.fume1 {
-  position: absolute;
-  top: 60px;
-  left: 60px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  animation-delay: 100ms;
-}
-.fume2 {
-  position: absolute;
-  top: 20px;
-  left: 46px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  animation-delay: 450ms;
-  opacity: 0.5;
-}
-.fume3 {
-  position: absolute;
-  top: 68px;
-  left: 95px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  animation-delay: 600ms;
-}
-.fume4 {
-  position: absolute;
-  top: 0px;
-  left: 74px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  animation-delay: 1050ms;
-  opacity: 0.5;
-}
-.fume5 {
-  position: absolute;
-  top: 15px;
-  left: 105px;
-  @include fumer-anim;
-  animation: move-bg2 2s ease infinite;
-  animation-delay: 1300ms;
-  opacity: 0.5;
-}
-.fume6 {
-  position: absolute;
-  top: 68px;
-  left: 130px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  animation-delay: 1050ms;
-}
-.fume7 {
-  position: absolute;
-  top: 35px;
-  left: 119px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  animation-delay: 1550ms;
-  opacity: 0.5;
-}
-.fume8 {
-  position: absolute;
-  top: 106px;
-  left: 30px;
-  @include fumer-anim;
-  animation: move-bg 2s ease infinite;
-  opacity: 0.2;
-}
-.fume9 {
-  position: absolute;
-  top: 95px;
-  left: 43px;
-  @include fumer-anim;
-  animation: move-bg 2s ease-in-out infinite;
-  animation-delay: 450ms;
-  opacity: 0.5;
-}
+
 /********** Le poussin ***********/
 .tete-poussin {
   position: absolute;
