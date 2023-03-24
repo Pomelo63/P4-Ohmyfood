@@ -1,0 +1,138 @@
+/****** Les caractéristiques des card de menu*********/
+.starter-button {
+  height: 69px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  &__Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    margin: 12px 0 12px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__Titre {
+    line-height: 23px;
+    margin: 0;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: $primary-font-color;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &__P {
+    font-family: $secondary-font;
+    font-style: normal;
+    color: $secondary-font-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &__validation {
+    position: relative;
+    background-color: #99e2d0;
+    @include flex-center;
+    height: 100%;
+    width: 59px;
+    border-radius: 0 15px 15px 0;
+  }
+  &__icon {
+    @include flex-center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    color: #99e2d0;
+    border-radius: 50%;
+  }
+}
+.starter_button__price {
+  @include font-mixin($secondary-font, $secondary-font-color, 15px, 18px, 700);
+  margin: 12px 18px 12px 0;
+  line-height: 18px;
+}
+.price-icon-box {
+  @include flex-Row;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+/********** ligne virtuelle pour faire l'overflow *******/
+.long-line {
+  min-width: calc(100% + 60px);
+  display: flex;
+  box-sizing: border-box;
+}
+/*************** Animation coche verte***********/
+.starter-button > .long-line > .price-icon-box > .starter-button__validation {
+  margin-right: 0;
+  transition: all 1s;
+}
+.starter-button:hover
+  > .long-line
+  > .price-icon-box
+  > .starter-button__validation {
+  margin-right: 59px;
+}
+/********animation icon tournante**********/
+.starter-button
+  > .long-line
+  > .price-icon-box
+  > .starter-button__validation
+  > i {
+  transition: all 0.5s ease-in-out;
+  transition-delay: 100ms;
+  transform: scale(0) rotate(500deg);
+}
+.starter-button:hover
+  > .long-line
+  > .price-icon-box
+  > .starter-button__validation
+  > i {
+  transform: scale(1) rotate(0deg);
+}
+/*****************Animation d'ouverture de page plusieurs Anim-Delay************/
+.anim-menu-1 {
+  @include menu-appear(0ms);
+}
+.anim-menu-2 {
+  @include menu-appear(50ms);
+}
+.anim-menu-3 {
+  @include menu-appear(150ms);
+}
+.anim-menu-4 {
+  @include menu-appear(200ms);
+}
+.anim-menu-5 {
+  @include menu-appear(250ms);
+}
+.anim-menu-6 {
+  @include menu-appear(300ms);
+}
+.anim-menu-7 {
+  @include menu-appear(350ms);
+}
+.anim-menu-8 {
+  @include menu-appear(400ms);
+}
+.anim-menu-9 {
+  @include menu-appear(450ms);
+}
+.anim-menu-10 {
+  @include menu-appear(500ms);
+}
+.anim-menu-11 {
+  @include menu-appear(550ms);
+}

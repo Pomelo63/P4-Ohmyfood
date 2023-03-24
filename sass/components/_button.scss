@@ -1,0 +1,39 @@
+/****Graphique bouton + commande hover*********/
+.Main-Btn {
+  width: auto;
+  min-height: 50px;
+  background: linear-gradient(
+    355deg,
+    $primary-color -5.2%,
+    $light-primary-color 110.74%
+  );
+  color: $btn-font-color;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 13px 19px;
+  @include font-mixin($secondary-font, white, 1em, 20px, 500);
+  box-sizing: border-box;
+  text-align: center;
+}
+.btn-animation {
+  @include btn-gradient-animation(0.5s, "");
+}
+/**************Concernant uniquement les boutons sur page restau*******/
+.Btn-restaurant {
+  position: relative;
+  box-sizing: border-box;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $br-tab) {
+    margin-top: 28px;
+  }
+}
+.btn-restaurant-width {
+  max-width: 186px;
+  min-width: 186px;
+  position: absolute;
+  top: 10px;
+}

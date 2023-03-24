@@ -2,23 +2,27 @@
 @import "./utils/mixins";
 @import "./utils/animations.scss";
 
-@import "./base/typography"; 
+@import "./base/typography";
 
-@import "./components/header" ;
+@import "./components/header";
 @import "./components/footer";
+@import "./components/button.scss";
+@import "./components/card.scss";
+@import "./components/cardgrid.scss";
+@import "./components/menu-button.scss";
 
 @import "./pages/index.scss";
 
-:root{
-    margin:auto;
-    font-size:16px;
-    max-width: 1440px;
+:root {
+  margin: auto;
+  font-size: 16px;
+  max-width: 1440px;
 }
-Body{
-    margin:0;
-    display:flex;
-    flex-direction: column;
+Body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-.body-restaurant{
-    position: relative;
+.body-restaurant {
+  position: relative;
 }

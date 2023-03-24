@@ -1,0 +1,53 @@
+h1 {
+  @include font-mixin($primary-font, $title-font-color, 1.875em, 44px, 400);
+}
+.Localisation--Font {
+  @include font-mixin($secondary-font, $secondary-font-color, 1em, 19px, 500);
+}
+h2 {
+  @include font-mixin($secondary-font, $primary-font-color, 1.5em, 28px, 700);
+  margin: 0;
+}
+h3 {
+  @include font-mixin($secondary-font, $primary-font-color, 1.125em, 21px, 700);
+  margin: 0;
+}
+h4 {
+  @include font-mixin($primary-font, $title-font-color, 1.75em, 44px, 400);
+}
+a {
+  text-decoration: none;
+}
+.footer-logo {
+  margin: 0;
+  @include font-mixin($primary-font, white, 1.125em, 27px, 400);
+}
+.Navigation-p--Font {
+  @include font-mixin(
+    $secondary-font,
+    $secondary-font-color,
+    1.125em,
+    21px,
+    300
+  );
+}
+.Card-p--Font {
+  @include font-mixin(
+    $secondary-font,
+    $secondary-font-color,
+    1.0625em,
+    20px,
+    300
+  );
+}
+.font-normal-semi-bold {
+  @include font-mixin($secondary-font, $secondary-font-color, 1em, 20px, 500);
+}
+.Functioning-order-font,
+.Footer-Link--Font {
+  margin: 0;
+  @include font-mixin($secondary-font, white, 0.9em, 17px, 500);
+}
+.txt-align-center {
+  text-align: center;
+}

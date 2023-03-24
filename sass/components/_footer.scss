@@ -1,0 +1,57 @@
+footer {
+  box-sizing: border-box;
+  background-color: $secondary-font-color;
+  width: 100%;
+  height: 197px;
+  padding: 22px 0px 0 25px;
+  @media (min-width: $br-tab) and (max-width: 992px) {
+    height: 117px;
+    padding-right: 0;
+  }
+  @media (min-width: 992px) {
+    height: 117px;
+  }
+}
+.Footer-Mobile {
+  @media (min-width: $br-tab) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4%;
+    margin-right: 7%;
+    padding-top: 20px;
+  }
+  @media (min-width: 992px) {
+    margin-right: 8%;
+  }
+}
+.footer-logo--margin {
+  margin-bottom: 16px;
+  @media (min-width: $br-tab) {
+    margin-top: 9px;
+  }
+}
+.Footer-Link_Mobile {
+  @media (min-width: $br-tab) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+    gap: 3%;
+    white-space: nowrap;
+  }
+}
+.Footer-Link-Box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 7px;
+  @media (min-width: $br-tab) and (max-width: 992px) {
+  }
+}
+.Footer-Link--Font {
+  font-size: 16px;
+  font-weight: 400;
+}

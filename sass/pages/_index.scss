@@ -1,0 +1,162 @@
+/***************recherche localisation********/
+.Localisation {
+  height: 50px;
+  position: relative;
+  background-color: $localisation-background-color;
+  &_Icon {
+    z-index: 0;
+    position: absolute;
+    top: 16px;
+    margin-left: calc(50% - 160px / 2);
+  }
+  &_Input {
+    z-index: 1;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding-left: calc(50% - 109px / 2);
+    background-color: rgba($color: #000000, $alpha: 0);
+  }
+}
+.background-color {
+  background-color: $background-color;
+}
+/***********section de navigation **********/
+.nav {
+  height: 287px;
+  display: flex;
+  justify-content: center;
+  @media (min-width: $br-tab) {
+    height: 260px;
+  }
+}
+.Navigation-Menu {
+  box-sizing: border-box;
+  position: relative;
+  margin: 39px 0 57px 0;
+  width: 84%;
+  @include flex-column-center;
+  @media (min-width: $br-tab) {
+    margin-top: 50px;
+  }
+  &_h {
+    text-align: center;
+    top: 0;
+    position: absolute;
+    width: 87%;
+    @media (min-width: $br-tab) {
+      font-size: 2.5em;
+    }
+  }
+  &_p {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    @include font-mixin(
+      $secondary-font,
+      $secondary-font-color,
+      1.125em,
+      21px,
+      300
+    );
+  }
+  &_Btn {
+    margin-top: 27px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 59px;
+    @include flex-column-center;
+  }
+}
+/************* Fonctionnement de l'enseigne*********/
+.Functioning {
+  box-sizing: border-box;
+  margin: 48px 20px 68px 20px;
+  position: relative;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $br-tab) {
+    @include flex-Row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0px;
+    left: 12%;
+    right: 13%;
+    width: 74%;
+    margin-left: 0;
+  }
+
+  &_title {
+    margin: 0 0 5px 0;
+    @media (min-width: $br-tab) {
+      width: 100%;
+    }
+  }
+}
+.Functioning-box {
+  box-sizing: border-box;
+  @include flex-center;
+  position: relative;
+  &_Number {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    @include flex-center;
+  }
+  @media (min-width: $br-tab) {
+    height: auto;
+    flex: 1;
+  }
+}
+.Functioning-Rectangle {
+  width: 97%;
+  height: 72px;
+  margin-left: 12px;
+  background-color: $background-color;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  @include flex-start;
+  &_Icon {
+    position: absolute;
+    left: 34px;
+    height: 100%;
+    @include flex-center;
+    font-size: 1.25em;
+    @include Functioning-box-design($purple-background: false);
+  }
+  &_p {
+    position: absolute;
+    left: 74px;
+    right: 27px;
+  }
+  @media (min-width: $br-tab) {
+    &_p {
+      position: absolute;
+      left: 61px;
+      right: 10px;
+    }
+  }
+  @media (min-width: 1260px) {
+    &_p {
+      position: absolute;
+      left: 74px;
+      right: 27px;
+    }
+  }
+}
+.background-purple {
+  background-color: #f5edff;
+}
+.F-Icon-font--color {
+  @include Functioning-box-design($purple-background: true);
+}
+.article {
+  overflow: hidden;
+}

@@ -1,3 +1,841 @@
+@charset "UTF-8";
+/********** Var color**************/
+/*********Var font color*********/
+/**********Var font family*******/
+/************Var Breaking point**********/
+/*********global mixin***********/
+/*********Functionning Box mixin***********/
+/************** Button radiant animation**************/
+/*********** Loader mixin***********/
+/***************** Heart Icon mixin**********/
+/************ Animation apparation menu list***********/
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.875em;
+  line-height: 44px;
+  color: #101010;
+  font-weight: 400;
+}
+
+.Localisation--Font {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 19px;
+  color: #353535;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 28px;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125em;
+  line-height: 21px;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75em;
+  line-height: 44px;
+  color: #101010;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-logo {
+  margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.125em;
+  line-height: 27px;
+  color: white;
+  font-weight: 400;
+}
+
+.Navigation-p--Font {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125em;
+  line-height: 21px;
+  color: #353535;
+  font-weight: 300;
+}
+
+.Card-p--Font {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0625em;
+  line-height: 20px;
+  color: #353535;
+  font-weight: 300;
+}
+
+.font-normal-semi-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 20px;
+  color: #353535;
+  font-weight: 500;
+}
+
+.Functioning-order-font,
+.Footer-Link--Font {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  line-height: 17px;
+  color: white;
+  font-weight: 500;
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+.Header--Flex {
+  position: relative;
+  z-index: 1;
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .Header--Flex {
+    height: 94px;
+    font-size: 1.24em;
+  }
+}
+
+/************** Icon de retour menu********/
+.header_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #353535;
+  font-size: 1.3em;
+  position: absolute;
+  left: 6%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.header_icon:hover {
+  animation: return-to-menu 1s linear infinite;
+}
+
+footer {
+  box-sizing: border-box;
+  background-color: #353535;
+  width: 100%;
+  height: 197px;
+  padding: 22px 0px 0 25px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer {
+    height: 117px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    height: 117px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Footer-Mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4%;
+    margin-right: 7%;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .Footer-Mobile {
+    margin-right: 8%;
+  }
+}
+
+.footer-logo--margin {
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .footer-logo--margin {
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Footer-Link_Mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+    gap: 3%;
+    white-space: nowrap;
+  }
+}
+
+.Footer-Link-Box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 7px;
+}
+.Footer-Link--Font {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/****Graphique bouton + commande hover*********/
+.Main-Btn {
+  width: auto;
+  min-height: 50px;
+  background: linear-gradient(355deg, #9356dc -5.2%, #ff79da 110.74%);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 13px 19px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 20px;
+  color: white;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.btn-animation {
+  position: relative;
+}
+.btn-animation::after {
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+.btn-animation:hover:after {
+  opacity: 1;
+}
+
+/**************Concernant uniquement les boutons sur page restau*******/
+.Btn-restaurant {
+  position: relative;
+  box-sizing: border-box;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .Btn-restaurant {
+    margin-top: 28px;
+  }
+}
+
+.btn-restaurant-width {
+  max-width: 186px;
+  min-width: 186px;
+  position: absolute;
+  top: 10px;
+}
+
+/********* Attribution graphique de base à la card***********/
+.Restaurant-Card {
+  width: 100%;
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  position: relative;
+  box-sizing: content-box;
+}
+.Restaurant-Card_Img {
+  box-sizing: border-box;
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.Restaurant-Card_Titre {
+  margin: 16px 0 5px 13px;
+}
+.Restaurant-Card_P {
+  margin: 0 0 12px 13px;
+}
+.Restaurant-Card_News {
+  width: 80px;
+  height: 29px;
+  background: #99e2d0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  line-height: 16px;
+  color: #008766;
+  font-weight: 500;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  text-align: center;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .Restaurant-Card {
+    min-width: 351px;
+    max-width: 351px;
+  }
+}
+
+.Restaurant-Card_TxtIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Restaurant-Card_Icon {
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 40px;
+  font-size: 1.375em;
+  box-sizing: border-box;
+}
+
+/******** Déclaration de mixin Icon Heart BG color-radiant****/
+.icon-bg-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.icon-bg {
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon-bg:after {
+  background-image: linear-gradient(#9356dc, #ff79da);
+  content: "\f004";
+  display: block;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  font-size: 1.045em;
+  transition: opacity 1s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.icon-bg::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-right: 25px;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-text-stroke-color: #101010;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -moz-text-stroke-color: #101010;
+  -moz-text-stroke-width: 1px;
+  transition: opacity 1s;
+}
+.icon-bg:hover:after {
+  opacity: 1;
+}
+.icon-bg:hover:before {
+  opacity: 0;
+}
+
+.Restaurant-Card_Icon:hover > .icon-bg:after {
+  opacity: 1;
+}
+
+/**************partie de selection des Restaurant en Accueille**/
+.Restaurants-Section {
+  position: relative;
+  padding: 54px 20px 64px 20px;
+}
+.Restaurants-Section_Titre {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .Restaurants-Section {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 54px 0 64px 0;
+  }
+  .Restaurants-Section_Titre {
+    position: relative;
+    left: 12%;
+  }
+}
+
+/********** card restaurant container************/
+.Restaurants-Cards-Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .Restaurants-Cards-Box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+/***************définition de la grid, et du noscroll pour effet liste*************/
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 251px 251px 251px 251px;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .restaurant-grid {
+    height: 264px;
+    grid-template-columns: 10% 335px 335px 335px 335px 10%;
+    grid-template-rows: 251px;
+    gap: 32px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .restaurant-grid::before, .restaurant-grid::after {
+    content: "";
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/****** Les caractéristiques des card de menu*********/
+.starter-button {
+  height: 69px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.starter-button__Text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  margin: 12px 0 12px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.starter-button__Titre {
+  line-height: 23px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.starter-button__P {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #353535;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.starter-button__validation {
+  position: relative;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 59px;
+  border-radius: 0 15px 15px 0;
+}
+.starter-button__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  color: #99e2d0;
+  border-radius: 50%;
+}
+
+.starter_button__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #353535;
+  font-weight: 700;
+  margin: 12px 18px 12px 0;
+  line-height: 18px;
+}
+
+.price-icon-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+/********** ligne virtuelle pour faire l'overflow *******/
+.long-line {
+  min-width: calc(100% + 60px);
+  display: flex;
+  box-sizing: border-box;
+}
+
+/*************** Animation coche verte***********/
+.starter-button > .long-line > .price-icon-box > .starter-button__validation {
+  margin-right: 0;
+  transition: all 1s;
+}
+
+.starter-button:hover > .long-line > .price-icon-box > .starter-button__validation {
+  margin-right: 59px;
+}
+
+/********animation icon tournante**********/
+.starter-button > .long-line > .price-icon-box > .starter-button__validation > i {
+  transition: all 0.5s ease-in-out;
+  transition-delay: 100ms;
+  transform: scale(0) rotate(500deg);
+}
+
+.starter-button:hover > .long-line > .price-icon-box > .starter-button__validation > i {
+  transform: scale(1) rotate(0deg);
+}
+
+/*****************Animation d'ouverture de page plusieurs Anim-Delay************/
+.anim-menu-1 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 0ms;
+}
+
+.anim-menu-2 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 50ms;
+}
+
+.anim-menu-3 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 150ms;
+}
+
+.anim-menu-4 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 200ms;
+}
+
+.anim-menu-5 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 250ms;
+}
+
+.anim-menu-6 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 300ms;
+}
+
+.anim-menu-7 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 350ms;
+}
+
+.anim-menu-8 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 400ms;
+}
+
+.anim-menu-9 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 450ms;
+}
+
+.anim-menu-10 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 500ms;
+}
+
+.anim-menu-11 {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: 550ms;
+}
+
+/***************recherche localisation********/
+.Localisation {
+  height: 50px;
+  position: relative;
+  background-color: #eaeaea;
+}
+.Localisation_Icon {
+  z-index: 0;
+  position: absolute;
+  top: 16px;
+  margin-left: calc(50% - 80px);
+}
+.Localisation_Input {
+  z-index: 1;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding-left: calc(50% - 54.5px);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.background-color {
+  background-color: #f7f7f7;
+}
+
+/***********section de navigation **********/
+.nav {
+  height: 287px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .nav {
+    height: 260px;
+  }
+}
+
+.Navigation-Menu {
+  box-sizing: border-box;
+  position: relative;
+  margin: 39px 0 57px 0;
+  width: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .Navigation-Menu {
+    margin-top: 50px;
+  }
+}
+.Navigation-Menu_h {
+  text-align: center;
+  top: 0;
+  position: absolute;
+  width: 87%;
+}
+@media (min-width: 768px) {
+  .Navigation-Menu_h {
+    font-size: 2.5em;
+  }
+}
+.Navigation-Menu_p {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125em;
+  line-height: 21px;
+  color: #353535;
+  font-weight: 300;
+}
+.Navigation-Menu_Btn {
+  margin-top: 27px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 59px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/************* Fonctionnement de l'enseigne*********/
+.Functioning {
+  box-sizing: border-box;
+  margin: 48px 20px 68px 20px;
+  position: relative;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .Functioning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0px;
+    left: 12%;
+    right: 13%;
+    width: 74%;
+    margin-left: 0;
+  }
+}
+.Functioning_title {
+  margin: 0 0 5px 0;
+}
+@media (min-width: 768px) {
+  .Functioning_title {
+    width: 100%;
+  }
+}
+
+.Functioning-box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Functioning-box_Number {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .Functioning-box {
+    height: auto;
+    flex: 1;
+  }
+}
+
+.Functioning-Rectangle {
+  width: 97%;
+  height: 72px;
+  margin-left: 12px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Functioning-Rectangle_Icon {
+  position: absolute;
+  left: 34px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  color: #7e7e7e;
+}
+.Functioning-Rectangle_p {
+  position: absolute;
+  left: 74px;
+  right: 27px;
+}
+@media (min-width: 768px) {
+  .Functioning-Rectangle_p {
+    position: absolute;
+    left: 61px;
+    right: 10px;
+  }
+}
+@media (min-width: 1260px) {
+  .Functioning-Rectangle_p {
+    position: absolute;
+    left: 74px;
+    right: 27px;
+  }
+}
+
+.background-purple {
+  background-color: #f5edff;
+}
+
+.F-Icon-font--color {
+  color: #9356dc;
+}
+
+.article {
+  overflow: hidden;
+}
+
 :root {
   margin: auto;
   font-size: 16px;

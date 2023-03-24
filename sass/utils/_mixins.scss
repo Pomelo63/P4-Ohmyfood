@@ -1,0 +1,136 @@
+/*********global mixin***********/
+@mixin font-mixin($family, $color, $size, $height, $weight) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  font-weight: $weight;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-Row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-column-uncenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+/*********Functionning Box mixin***********/
+@mixin Functioning-box-design($purple-background: true) {
+  @if $purple-background {
+    color: #9356dc;
+  } @else {
+    color: #7e7e7e;
+  }
+}
+/************** Button radiant animation**************/
+@mixin btn-gradient-animation($transTime, $content) {
+  position: relative;
+
+  &::after {
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    content: $content;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: $transTime;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+/*********** Loader mixin***********/
+@mixin fumer-anim {
+  background: linear-gradient(to top, white 20%, #008766, white 80%);
+  background-size: 400% 400%;
+  color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0.2;
+}
+/***************** Heart Icon mixin**********/
+@mixin icon-bg($start, $end, $transTime, $content) {
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    background-image: linear-gradient($end, $start);
+    content: $content;
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    font-size: 1.045em;
+    transition: opacity $transTime;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-text-stroke-color: $title-font-color;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -moz-text-stroke-color: $title-font-color;
+    -moz-text-stroke-width: 1px;
+    transition: opacity 1s;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+/************ Animation apparation menu list***********/
+@mixin menu-appear($delay) {
+  animation: appearance-anim 0.6s linear both;
+  animation-delay: $delay;
+}

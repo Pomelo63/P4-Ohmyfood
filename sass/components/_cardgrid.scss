@@ -1,0 +1,56 @@
+/**************partie de selection des Restaurant en Accueille**/
+.Restaurants-Section {
+  position: relative;
+  padding: 54px 20px 64px 20px;
+  &_Titre {
+    margin-bottom: 20px;
+  }
+  @media (min-width: $br-tab) {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 54px 0 64px 0;
+    &_Titre {
+      position: relative;
+      left: 12%;
+    }
+  }
+}
+/********** card restaurant container************/
+.Restaurants-Cards-Box {
+  @include flex-column-center;
+  gap: 18px;
+  @media (min-width: $br-tab) {
+    @include flex-Row;
+    justify-content: space-between;
+  }
+  @media (min-width: 1260px) {
+  }
+}
+/***************définition de la grid, et du noscroll pour effet liste*************/
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 251px 251px 251px 251px;
+  gap: 16px;
+  @media (min-width: $br-tab) {
+    height: 264px;
+    grid-template-columns: 10% 335px 335px 335px 335px 10%;
+    grid-template-rows: 251px;
+    gap: 32px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    &::before,
+    &::after {
+      content: "";
+    }
+  }
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
