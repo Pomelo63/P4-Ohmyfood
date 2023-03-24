@@ -1,0 +1,350 @@
+/*************** Mise en page loader*******/
+.centre-loarder {
+  z-index: 1000;
+  position: fixed;
+  top: 0vw;
+  left: 0vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.loader-page {
+  height: 250px;
+  width: 200px;
+  position: relative;
+  transition: opacity 1000ms;
+  animation: opacity-loader 3.8s ease-out both;
+}
+.centre-loarder h1 {
+  font-size: 3.5em;
+}
+.Out-loader {
+  animation: Out-loader 0.45s cubic-bezier(0.6, -0.28, 0.735, 0.045) both;
+  animation-delay: 3000ms;
+}
+/***********animation title***********/
+.title-site-animation {
+  animation: title-site-animation 3s linear both;
+  animation-delay: 850ms;
+}
+/*********** La marmitte*********/
+.La-marmite {
+  position: relative;
+  left: 35px;
+  top: 160px;
+  opacity: 0.95;
+}
+.Marmite-body {
+  z-index: 100;
+  position: absolute;
+  height: 80px;
+  width: 94px;
+  border-width: 4px;
+  border-style: solid;
+  border-left-width: 30px;
+  border-top-width: 15px;
+  border-image: linear-gradient(to right, $primary-color, $light-primary-color)
+    1 1 1 1;
+  border-radius: 0 0 30px 30px;
+}
+.Marmite-poigne {
+  width: 40px;
+  height: 15px;
+  position: absolute;
+}
+.poigne-left {
+  border-radius: 5px 0 0 15px;
+  top: 0;
+  width: 30px;
+  left: -30px;
+  background-color: $primary-color;
+}
+.poigne-right {
+  width: 30px;
+  border-radius: 0 5px 15px 0;
+  top: 0;
+  left: 125px;
+  background-color: $light-primary-color;
+}
+.cuillere {
+  height: 50px;
+  width: 10px;
+  background-color: #eaeaea;
+  transform: rotate(30deg);
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: 115px;
+  left: 120px;
+  animation: anim-cuillere 1.5s linear infinite;
+}
+/***************Les fumées******************/
+.left-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+}
+.little-left-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+.little-left-smoke-upper {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.upper-left-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+.mid-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+}
+.mid-upper-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+.right-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 65px;
+}
+.right-upper-smoke {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+}
+.fume1 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  animation-delay: 100ms;
+}
+.fume2 {
+  position: absolute;
+  top: 20px;
+  left: 46px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  animation-delay: 450ms;
+  opacity: 0.5;
+}
+.fume3 {
+  position: absolute;
+  top: 68px;
+  left: 95px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  animation-delay: 600ms;
+}
+.fume4 {
+  position: absolute;
+  top: 0px;
+  left: 74px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  animation-delay: 1050ms;
+  opacity: 0.5;
+}
+.fume5 {
+  position: absolute;
+  top: 15px;
+  left: 105px;
+  @include fumer-anim;
+  animation: move-bg2 2s ease infinite;
+  animation-delay: 1300ms;
+  opacity: 0.5;
+}
+.fume6 {
+  position: absolute;
+  top: 68px;
+  left: 130px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  animation-delay: 1050ms;
+}
+.fume7 {
+  position: absolute;
+  top: 35px;
+  left: 119px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  animation-delay: 1550ms;
+  opacity: 0.5;
+}
+.fume8 {
+  position: absolute;
+  top: 106px;
+  left: 30px;
+  @include fumer-anim;
+  animation: move-bg 2s ease infinite;
+  opacity: 0.2;
+}
+.fume9 {
+  position: absolute;
+  top: 95px;
+  left: 43px;
+  @include fumer-anim;
+  animation: move-bg 2s ease-in-out infinite;
+  animation-delay: 450ms;
+  opacity: 0.5;
+}
+/********** Le poussin ***********/
+.tete-poussin {
+  position: absolute;
+  top: 80px;
+  left: 140px;
+  height: 70px;
+  width: 60px;
+  background: linear-gradient(120deg, #bbdbf5, #89c8fa 42%, #417aa9);
+  border-radius: 70% 70% 50% 50% / 90% 90% 60% 60%;
+}
+.yeux-poussin {
+  position: absolute;
+  top: 100px;
+  left: 145px;
+  height: 5px;
+  width: 5px;
+  border: 2px solid;
+  background-color: black;
+  border-radius: 50%;
+}
+.pupille-poussin {
+  position: absolute;
+  top: 104px;
+  left: 146px;
+  height: 4px;
+  width: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+.bec-poussin {
+  position: absolute;
+  top: 108px;
+  left: 128px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 16px 4px;
+  border-color: transparent transparent rgb(255, 170, 0) transparent;
+  transform: rotate(260deg);
+}
+.ailes-poussin {
+  position: absolute;
+  top: 115px;
+  left: 120px;
+  height: 38px;
+  width: 60px;
+  border-radius: 6px 30px 25px 50px;
+  transform: rotate(-30deg);
+  border: 1px solid #84b8e1;
+  animation: anim-aile 1.5s linear infinite;
+  background: linear-gradient(160deg, #bbdbf5, #89c8fa 60%, #549bd5);
+}
+.barre-aile-poussin {
+  position: absolute;
+  top: 138px;
+  left: 122px;
+  width: 15px;
+  height: 0px;
+  border: 1px solid #84b8e1;
+  transform: rotate(-30deg);
+  animation: anim-aile2 1.5s linear infinite;
+}
+.barre-aile-bas-poussin {
+  position: absolute;
+  top: 145px;
+  left: 132px;
+  width: 15px;
+  height: 0px;
+  border: 1px solid #84b8e1;
+  transform: rotate(-30deg);
+  animation: anim-aile3 1.5s linear infinite;
+}
+.pattes-poussin {
+  position: absolute;
+  top: 151px;
+  left: 170px;
+  width: 0px;
+  height: 5px;
+  border: 2px solid rgb(206, 143, 15);
+}
+.pied-poussin {
+  position: absolute;
+  top: 157px;
+  left: 163px;
+  width: 10px;
+  height: 0px;
+  border: 2px solid rgb(206, 143, 15);
+}
+.queue-poussin {
+  position: absolute;
+  top: 116px;
+  left: 198px;
+  width: 10px;
+  height: 30px;
+  background: linear-gradient(50deg, #6298c4, #417aa9 60%, #24669c);
+  border-radius: 70% 90% 100% 50% / 90% 100% 100% 60%;
+  transform: rotate(50deg);
+}
+/*************** Le chapeau***********/
+.chapeau-cuistot {
+  position: absolute;
+  top: 45px;
+  left: 164px;
+  width: 44px;
+  height: 50px;
+  border: 1px solid #f4f4f4;
+  border-top: none;
+  background: linear-gradient(80deg, white, #f7f7f7);
+  transform: rotate(25deg);
+}
+.rond-chapeau {
+  position: absolute;
+  top: 25px;
+  left: 164px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  border-bottom: none;
+  border-right: none;
+  background: linear-gradient(80deg, white, #f7f7f7);
+  transform: rotate(0deg);
+}
+.rond-right-chapeau {
+  position: absolute;
+  top: 43px;
+  left: 202px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  border-bottom: none;
+  border-right: none;
+  background: linear-gradient(80deg, white, #f7f7f7);
+  transform: rotate(140deg);
+}
+.rond-mid-chapeau {
+  position: absolute;
+  top: 26px;
+  left: 187px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  border-bottom: none;
+  border-right: none;
+  background: linear-gradient(80deg, white, #f7f7f7);
+  transform: rotate(65deg);
+}
