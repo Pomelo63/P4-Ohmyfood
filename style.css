@@ -448,6 +448,10 @@ footer {
 }
 
 /*************** Mise en page loader*******/
+.Loader-title {
+  font-family: "Shrikhand", cursive;
+}
+
 .centre-loarder {
   z-index: 1000;
   position: fixed;
