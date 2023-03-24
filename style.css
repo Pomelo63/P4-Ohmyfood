@@ -450,8 +450,21 @@ footer {
 /*************** Mise en page loader*******/
 .Loader-title {
   font-family: "Shrikhand", cursive;
+  opacity: 0;
+  animation: loaderTitleOpacity 3s linear both;
 }
 
+@keyframes loaderTitleOpacity {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .centre-loarder {
   z-index: 1000;
   position: fixed;
