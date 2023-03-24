@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="./style.css" rel="stylesheet">
+    <title>Ohmyfood page d'accueil</title>
+</head>
+
+<body>
+    <!--Page Code-->
+    <header class="Header--Flex">
+        <h1>ohmyfood</h1>
+    </header>
+    <main>
+        <div class="Localisation">
+            <div class="Localisation--Font Localisation_Icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+            <input class="Localisation--Font Localisation_Input" type="text" placeholder="Ville, Quartier">
+        </div>
+        <nav class="nav background-color">
+            <div class="Navigation-Menu">
+                <h2 class="Navigation-Menu_h">Réservez le menu qui vous convient</h2>
+                <p class="Navigation-Menu_p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <a class="Main-Btn btn-animation Navigation-Menu_Btn" href="#Lien-Restaurant">Explorer nos
+                    restaurants</a>
+            </div>
+        </nav>
+        <section>
+            <div class="Functioning">
+                <h2 class="Functioning_title">Fonctionnement</h2>
+                <div class="Functioning-box">
+                    <div class="Functioning-box_Number Functioning-order-font">1</div>
+                    <div class="Functioning-Rectangle">
+                        <div class="Functioning-Rectangle_Icon"><i
+                                class="fa-sharp fa-solid fa-mobile-screen-button"></i></div>
+                        <p class="Functioning-Rectangle_p font-normal-semi-bold">Choisissez un restaurant</p>
+                    </div>
+                </div>
+                <div class="Functioning-box">
+                    <div class="Functioning-box_Number Functioning-order-font">2</div>
+                    <div class="Functioning-Rectangle">
+                        <div class="Functioning-Rectangle_Icon"><i class="fa-sharp fa-solid fa-list-ul"></i></div>
+                        <p class="Functioning-Rectangle_p font-normal-semi-bold">Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="Functioning-box">
+                    <div class="Functioning-box_Number Functioning-order-font">3</div>
+                    <div class="Functioning-Rectangle background-purple">
+                        <div class="Functioning-Rectangle_Icon F-Icon-font--color"><i
+                                class="fa-sharp fa-solid fa-store"></i></div>
+                        <p class="Functioning-Rectangle_p font-normal-semi-bold">Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="article background-color" id="Lien-Restaurant">
+            <div class="Restaurants-Section">
+                <h2 class="Restaurants-Section_Titre">Restaurants</h2>
+                <div class="restaurant-grid no-scrollbar">
+                    <a class="Restaurant-Card" href="restaurants/restaurant_pdg.html">
+                        <img class="Restaurant-Card_Img"
+                            src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="assiete de saumon sur une table en bois.">
+                        <div class="Restaurant-Card_TxtIcon">
+                            <div class="Restaurant-Card_Txt">
+                                <h3 class="Restaurant-Card_Titre">La palette du goût</h3>
+                                <p class="Restaurant-Card_P Card-p--Font">Ménilmontant</p>
+                            </div>
+                            <div class="Restaurant-Card_Icon">
+                                <div class="icon-bg-div"><i class="fa-sharp fa-solid fa-heart icon-bg"></i></div>
+                            </div>
+                            <div class="Restaurant-Card_News">Nouveau</div>
+                        </div>
+                    </a>
+                    <a class="Restaurant-Card" href="restaurants/restaurant_ne.html">
+                        <img class="Restaurant-Card_Img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Cromesqui aux olives et aux légumes.">
+                        <div class="Restaurant-Card_TxtIcon">
+                            <div class="Restaurant-Card_Txt">
+                                <h3 class="Restaurant-Card_Titre">La note enchantée</h3>
+                                <p class="Restaurant-Card_P Card-p--Font">Charonne</p>
+                            </div>
+                            <div class="Restaurant-Card_Icon">
+                                <div class="icon-bg-div"><i class="fa-sharp fa-solid fa-heart icon-bg"></i></div>
+                            </div>
+                            <div class="Restaurant-Card_News">Nouveau</div>
+                        </div>
+                    </a>
+                    <a class="Restaurant-Card" href="restaurants/restaurant_alf.html">
+                        <img class="Restaurant-Card_Img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="oeufs pochés sur un lit d'épinards">
+                        <div class="Restaurant-Card_TxtIcon">
+                            <div class="Restaurant-Card_Txt">
+                                <h3 class="Restaurant-Card_Titre">À la française</h3>
+                                <p class="Restaurant-Card_P Card-p--Font">Cité Rouge</p>
+                            </div>
+                            <div class="Restaurant-Card_Icon">
+                                <div class="icon-bg-div"><i class="fa-sharp fa-solid fa-heart icon-bg"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="Restaurant-Card" href="restaurants/restaurant_dds.html">
+                        <img class="Restaurant-Card_Img"
+                            src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Filet de daurade aux légumes du soleil">
+                        <div class="Restaurant-Card_TxtIcon">
+                            <div class="Restaurant-Card_Txt">
+                                <h3 class="Restaurant-Card_Titre">Le délice des sens</h3>
+                                <p class="Restaurant-Card_P Card-p--Font">Folie-Méricourt</p>
+                            </div>
+                            <div class="Restaurant-Card_Icon">
+                                <div class="icon-bg-div"><i class="fa-sharp fa-solid fa-heart icon-bg"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="Footer-Mobile">
+            <h4 class="footer-logo footer-logo--margin">ohmyfood</h4>
+            <div class="Footer-Link_Mobile">
+                <a class="Footer-Link-Box" href="#">
+                    <div class="Footer-Link--Font"><i class="fa-sharp fa-solid fa-utensils"></i></div>
+                    <p class="Footer-Link--Font">Proposer un restaurant</p>
+                </a>
+                <a class="Footer-Link-Box" href="#">
+                    <div class="Footer-Link--Font"><i class="fa-sharp fa-solid fa-handshake-angle"></i></div>
+                    <p class="Footer-Link--Font">Devenir partenaire</p>
+                </a>
+                <a class="Footer-Link-Box" href="#">
+                    <p class="Footer-Link--Font">Mentions légales</p>
+                </a>
+                <a class="Footer-Link-Box" href="mailto:contact-us@ohmyfood.com">
+                    <p class="Footer-Link--Font">Contact</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
