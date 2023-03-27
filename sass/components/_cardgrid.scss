@@ -5,7 +5,15 @@
   &_Titre {
     margin-bottom: 20px;
   }
-  @media (min-width: $br-tab) {
+  @media (min-width: 768px) {
+      width: 100%;
+      padding: 54px 0px 64px 0px;
+      &_Titre {
+      position: relative;
+      left: 53px;
+    }
+  }
+  @media (min-width: 1080px) {
     width: 100%;
     white-space: nowrap;
     overflow-x: hidden;
@@ -33,9 +41,26 @@
   grid-template-columns: 100%;
   grid-template-rows: 251px 251px 251px 251px;
   gap: 16px;
-  @media (min-width: $br-tab) {
+  @media (min-width: 768px) {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      height: 264px;
+      grid-template-columns: [col] 49% [col] 49%;
+      grid-template-rows: 251px 251px 1px;
+      row-gap: 32px;
+      column-gap: 20px;
+      overflow-y: auto;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    &::after {
+      content: "";
+      grid-column: col / span 2;
+    }
+  }
+  @media (min-width: 1080px) {
     height: 264px;
-    grid-template-columns: 10% 335px 335px 335px 335px 10%;
+    grid-template-columns: 9% 335px 335px 335px 335px 9%;
     grid-template-rows: 251px;
     gap: 32px;
     overflow-x: auto;

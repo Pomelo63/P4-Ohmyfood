@@ -78,9 +78,14 @@
   gap: 25px;
   display: flex;
   flex-direction: column;
-  @media (min-width: $br-tab) {
+  @media (min-width: $br-tab) and (max-width: 1080px) {
     @include flex-Row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0px;
+    margin:48px 53px 68px 53px;
+  }
+  @media (min-width: 1080px) {
+    @include flex-Row;
     flex-wrap: wrap;
     top: 0px;
     left: 12%;

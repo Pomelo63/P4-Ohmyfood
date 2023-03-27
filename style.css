@@ -449,10 +449,10 @@ footer {
 
 /*************** Mise en page loader*******/
 .Loader-title {
-  text-align:center;
   font-family: "Shrikhand", cursive;
   opacity: 0;
   animation: loaderTitleOpacity 3s linear both;
+  text-align: center;
 }
 
 @keyframes loaderTitleOpacity {
@@ -904,7 +904,7 @@ li:nth-child(8) {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width:1080px) {
+@media (min-width: 768px) and (max-width: 1080px) {
   .Functioning {
     display: flex;
     flex-direction: row;
@@ -912,7 +912,7 @@ li:nth-child(8) {
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0px;
-    margin:48px 53px 68px 53px;
+    margin: 48px 53px 68px 53px;
   }
 }
 @media (min-width: 1080px) {
@@ -932,7 +932,6 @@ li:nth-child(8) {
 .Functioning_title {
   margin: 0 0 5px 0;
 }
-
 @media (min-width: 768px) {
   .Functioning_title {
     width: 100%;
@@ -1261,7 +1260,7 @@ li:nth-child(8) {
   justify-content: center;
   align-items: center;
   margin: 0;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .icon-bg {
@@ -1365,6 +1364,7 @@ li:nth-child(8) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    justify-content: space-between;
   }
 }
 /***************définition de la grid, et du noscroll pour effet liste*************/
@@ -1374,35 +1374,33 @@ li:nth-child(8) {
   grid-template-rows: 251px 251px 251px 251px;
   gap: 16px;
 }
-@media screen and (min-width: 768px) and (max-width:1080px) {
+@media (min-width: 768px) {
   .restaurant-grid {
-    padding-left:50px;
-padding-right:50px;
-padding-bottom:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     height: 264px;
     grid-template-columns: [col] 49% [col] 49%;
     grid-template-rows: 251px 251px 1px;
     row-gap: 32px;
-    column-gap:20px;
+    column-gap: 20px;
     overflow-y: auto;
-overflow-x: auto;
+    overflow-x: auto;
     scroll-behavior: smooth;
-  }.restaurant-grid::after {
+  }
+  .restaurant-grid::after {
     content: "";
-    grid-column: col / span 2;
+    grid-column: col/span 2;
   }
 }
 @media (min-width: 1080px) {
   .restaurant-grid {
-    height:264px;
+    height: 264px;
     grid-template-columns: 9% 335px 335px 335px 335px 9%;
     grid-template-rows: 251px;
     gap: 32px;
     overflow-x: auto;
     scroll-behavior: smooth;
-  }
-  .restaurant-grid::before, .restaurant-grid::after {
-    content: "";
   }
   .restaurant-grid::before, .restaurant-grid::after {
     content: "";
@@ -1421,7 +1419,6 @@ overflow-x: auto;
 
 /****** Les caractéristiques des card de menu*********/
 .starter-button {
-  cursor:pointer;
   height: 69px;
   width: 100%;
   background: #ffffff;
@@ -1429,6 +1426,7 @@ overflow-x: auto;
   border-radius: 15px;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
 }
 .starter-button__Text {
   width: 100%;
