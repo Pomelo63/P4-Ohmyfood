@@ -904,12 +904,22 @@ li:nth-child(8) {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1080px) {
   .Functioning {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0px;
+    margin:48px 53px 68px 53px;
+  }
+}
+@media (min-width: 1080px) {
+  .Functioning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0px;
@@ -922,6 +932,7 @@ li:nth-child(8) {
 .Functioning_title {
   margin: 0 0 5px 0;
 }
+
 @media (min-width: 768px) {
   .Functioning_title {
     width: 100%;
@@ -1217,7 +1228,7 @@ li:nth-child(8) {
   padding-top: 7px;
   box-sizing: border-box;
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .Restaurant-Card {
     min-width: 351px;
     max-width: 351px;
@@ -1320,6 +1331,16 @@ li:nth-child(8) {
 @media (min-width: 768px) {
   .Restaurants-Section {
     width: 100%;
+    padding: 54px 0px 64px 0px;
+  }
+  .Restaurants-Section_Titre {
+    position: relative;
+    left: 53px;
+  }
+}
+@media (min-width: 1080px) {
+  .Restaurants-Section {
+    width: 100%;
     white-space: nowrap;
     overflow-x: hidden;
     padding: 54px 0 64px 0;
@@ -1344,7 +1365,6 @@ li:nth-child(8) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    justify-content: space-between;
   }
 }
 /***************définition de la grid, et du noscroll pour effet liste*************/
@@ -1354,14 +1374,35 @@ li:nth-child(8) {
   grid-template-rows: 251px 251px 251px 251px;
   gap: 16px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1080px) {
   .restaurant-grid {
+    padding-left:50px;
+padding-right:50px;
+padding-bottom:50px;
     height: 264px;
-    grid-template-columns: 10% 335px 335px 335px 335px 10%;
+    grid-template-columns: [col] 49% [col] 49%;
+    grid-template-rows: 251px 251px 1px;
+    row-gap: 32px;
+    column-gap:20px;
+    overflow-y: auto;
+overflow-x: auto;
+    scroll-behavior: smooth;
+  }.restaurant-grid::after {
+    content: "";
+    grid-column: col / span 2;
+  }
+}
+@media (min-width: 1080px) {
+  .restaurant-grid {
+    height:264px;
+    grid-template-columns: 9% 335px 335px 335px 335px 9%;
     grid-template-rows: 251px;
     gap: 32px;
     overflow-x: auto;
     scroll-behavior: smooth;
+  }
+  .restaurant-grid::before, .restaurant-grid::after {
+    content: "";
   }
   .restaurant-grid::before, .restaurant-grid::after {
     content: "";
